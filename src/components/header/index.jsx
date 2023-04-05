@@ -3,12 +3,19 @@ import { ImLocation } from "react-icons/im";
 import { FilledButton, SimpleButton } from 'styled/buttons';
 import { NavLink } from "react-router-dom";
 import "./style.scss";
+import { MenuButton } from "./menuButton";
+import { useState } from "react";
 
 export const Header = () => {
+
+  const [showNav, setShowNav] = useState(false)
+
+
   return (
     <header className="header">
       <Logo />
-      <nav className="navbar">
+      <MenuButton showNav={showNav} setShowNav={setShowNav}/>
+      <nav className={`navbar ${showNav ? 'visible' : 'hidden'}`}>
         <ul className="navbar__list navbar__list--left-side">
           <li className="navlink">
             <NavLink to="menu">menu</NavLink>

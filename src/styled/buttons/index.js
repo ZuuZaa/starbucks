@@ -12,7 +12,9 @@ border-radius: 5rem;
 margin-top:${({m_top}) => m_top}; 
 margin-left:${({m_left}) => m_left}; 
 margin-right:${({m_right}) => m_right}; 
+transition: all 0.3s ease;
 ` 
+
 export const SimpleButton = styled(Button)`
 border: 0.1rem solid ${({color}) => color};
 

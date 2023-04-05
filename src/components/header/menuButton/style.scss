@@ -1,0 +1,72 @@
+.menu-button {
+    border: none;
+    outline: none;
+    background: inherit;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    place-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    .bar {
+        background: rgba(0, 0, 0, .87);
+        display: inline-block;
+        width: 2.4rem;
+        height: 0.18rem;
+        position: relative;
+        transition: all 1s;
+
+        &::before,
+        &::after {
+            content: "";
+            width: 2.4rem;
+            height: 0.18rem;
+            background: rgba(0, 0, 0, .87);
+            position: absolute;
+            transition: all 1s;
+            left: 0;
+        }
+
+        &::before {
+            top: -.7rem;
+        }
+
+        &::after {
+            top: .7rem;
+        }
+    }
+
+    &:is(.cross) {
+        .bar {
+            background-color: transparent;
+
+            &::before,
+            &::after {
+                top: 0;
+                left: 0;
+            }
+
+            &::before {
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &:hover {
+        background: rgb(0, 0, 0, 0.1);
+    }
+
+    @media screen and (min-width: 320px) {
+        display: grid;
+    }
+
+    @media screen and (min-width: 772px) {
+        display: none;
+    }
+
+}
