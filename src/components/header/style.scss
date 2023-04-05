@@ -1,0 +1,66 @@
+.header {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, .87);
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .navlink > a {
+            display: inline-block;
+            padding-block: 4rem;
+            margin-right: 2.4rem;
+            font-size: 1.4rem;
+            letter-spacing: 0.1rem;
+
+
+            svg {
+                margin-right: 0.8rem;
+            }
+
+            &:hover {
+                color: #00754a;
+            }
+
+            &:is(.active) {
+                box-shadow: inset 0 -6px #00754a;
+            }
+        }
+
+        hr {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+
+            &--left-side {
+                text-transform: uppercase;
+                font-weight: 900;
+            }
+            &--right-side {
+                font-weight: 400;
+            }
+
+        }
+    }
+
+    @media screen and (min-width: 320px) {
+        padding-inline: 1.6rem
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-inline: 2.4rem
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding-inline: 4rem
+    }
+
+}
