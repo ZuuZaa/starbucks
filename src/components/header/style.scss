@@ -3,18 +3,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.4rem;
     color: rgba(0, 0, 0, .87);
     position: relative;
 
     .navbar {
-        
+
         display: flex;
-        transition: all 2s ease-in-out;
+        transition: transform .5s;
+        background: #fff;
 
         .navlink>a {
             display: inline-block;
-            font-size: 1.4rem;
             letter-spacing: 0.1rem;
             transition: all 0.5s;
 
@@ -31,14 +30,7 @@
         &__list {
             display: flex;
 
-            &--left-side {
-                text-transform: uppercase;
-                font-weight: 900;
-            }
 
-            &--right-side {
-                font-weight: 400;
-            }
         }
     }
 }
@@ -49,13 +41,14 @@
 
         .navbar {
             width: 80%;
-            height: calc(100vh - 7.2rem);
+            height: calc(100vh - 7.3rem);
             flex-direction: column;
             position: absolute;
-            top: 7.2rem;
+            z-index: 5;
+            top: 7.3rem;
             right: 0;
-            padding-inline: 3.2rem;
-            
+            padding: 3.2rem;
+
             hr {
                 display: block;
             }
@@ -63,10 +56,20 @@
             &__list {
                 align-items: flex-start;
                 flex-direction: column;
-    
+
+                &--left-side {
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    font-size: 1.9rem;
+
+                }
+
                 &--right-side {
                     margin-top: 3.2rem;
                     flex-direction: column-reverse;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+
                 }
             }
 
@@ -75,11 +78,13 @@
                 padding-block: 1.6rem;
             }
 
-            &:is(.hidden){
+            &:is(.hidden) {
                 transform: translateX(110%);
             }
-            &:is(.visible){
+
+            &:is(.visible) {
                 transform: translateX(0);
+
             }
         }
     }
@@ -90,13 +95,14 @@
     .header {
         padding-inline: 2.4rem;
 
+
         .navbar {
             width: 100%;
             height: 100%;
             position: static;
             flex-direction: row;
             justify-content: space-between;
-            padding-inline: 0;
+            padding: 0;
 
             hr {
                 display: none;
@@ -105,16 +111,26 @@
             &__list {
                 align-items: center;
                 flex-direction: row;
-    
+
+                &--left-side {
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    font-size: 1.4rem;
+                }
+
                 &--right-side {
                     flex-direction: row;
                     margin-top: 0;
+                    font-weight: 400;
+                    font-size: 1.4rem;
                 }
             }
+
             .navlink>a {
                 padding-block: 4rem;
                 margin-right: 2.4rem;
-    
+
+
                 &:is(.active) {
                     box-shadow: inset 0 -6px #00754a;
                 }

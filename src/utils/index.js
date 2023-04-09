@@ -1,4 +1,12 @@
-import { nanoid } from "nanoid";
+import { nanoid } from 'nanoid';
+import {
+    FaYoutube,
+    FaFacebookF,
+    FaInstagram,
+    FaPinterestP,
+    FaTwitter,
+    FaSpotify
+} from 'react-icons/fa';
 
 export const footerLinks = [
     {
@@ -153,7 +161,66 @@ export const footerLinks = [
     }
 ]
 
+export const sosialLinks = [
+    {
+        id: nanoid(),
+        icon: <FaSpotify />,
+        url: 'https://open.spotify.com/user/starbucks'
+    },
+    {
+        id: nanoid(),
+        icon: <FaFacebookF />,
+        url: 'https://m.facebook.com/starbucks?wtsid=rdr_0Dy9Rk23VshoE3DjD'
+    },
+    {
+        id: nanoid(),
+        icon: <FaPinterestP />,
+        url: 'https://www.pinterest.com/starbucks/'
+    },
+    {
+        id: nanoid(),
+        icon: <FaInstagram />,
+        url: 'https://www.instagram.com/starbucks/'
+    },
+    {
+        id: nanoid(),
+        icon: <FaYoutube />,
+        url: 'https://www.youtube.com/starbucks'
+    },
+    {
+        id: nanoid(),
+        icon: <FaTwitter />,
+        url: 'https://twitter.com/starbucks/'
+    }
+]
 
+export const footerExtra = [
+    {
+        id: nanoid(),
+        name: 'Privacy Notice',
+        url: '/'
+    },
+    {
+        id: nanoid(),
+        name: 'Terms of Use',
+        url: '/'
+    },
+    {
+        id: nanoid(),
+        name: 'Do Not Share My Personal Information',
+        url: '/'
+    },
+    {
+        id: nanoid(),
+        name: 'CA Supply Chain Act',
+        url: '/'
+    },
+    {
+        id: nanoid(),
+        name: 'Cookie Preferences',
+        url: '/'
+    }
+]
 
 
 

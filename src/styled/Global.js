@@ -13,6 +13,7 @@ html {
 
 body {
     transition: all 0.3;
+    overflow-x: hidden;
 }
 
 ul {
@@ -22,5 +23,11 @@ ul {
 a {
     color:inherit;
     text-decoration: none;
+}
+button {
+    border: none;
+    outline: none;
+    background: inherit;
+    cursor: pointer;
 }
 `

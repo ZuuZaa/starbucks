@@ -18,13 +18,24 @@ align-items: ${({ ai }) => ai};
     align-items: ${({ ai_m }) => ai_m};
 }
 
-@media screen and (min-width: 10240px) {
+@media screen and (min-width: 1024px) {
     flex-direction: ${({ fd_l }) => fd_l};
     justify-content: ${({ jc_l }) => jc_l};
     align-items: ${({ ai_l }) => ai_l};
 }
+`
 
+export const Container = styled.div`
 
+@media screen and (min-width: 320px) {
+    padding-inline: ${({ p_s }) => p_s};
+}
 
+@media screen and (min-width: 772px) {
+    padding-inline: ${({ p_m }) => p_m};
+}
 
+@media screen and (min-width: 1024px) {
+    padding-inline: ${({ p_l }) => p_l};
+}
 `

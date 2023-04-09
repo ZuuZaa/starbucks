@@ -1,13 +1,9 @@
 .menu-button {
-    border: none;
-    outline: none;
-    background: inherit;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
     place-items: center;
     transition: all 0.5s;
-    cursor: pointer;
 
     .bar {
         background: rgba(0, 0, 0, .87);
