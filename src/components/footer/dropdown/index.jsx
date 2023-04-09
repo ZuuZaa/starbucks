@@ -27,22 +27,25 @@ export const Dropdown = ({ title, item }) => {
 
     return (
         <div className='dropdown-container'>
-            <div className="title"  onClick={() => setIsOpen(!isOpen)}>
+            <div className="title" onClick={() => setIsOpen(!isOpen)}>
                 <h3>{title}</h3>
                 {
                     !desktopScreen &&
-                    <button className={isOpen ? 'chevron up' : 'chevron down' }>
-                        <BsChevronDown />
-                    </button>
+                    <>
+                    <div className="btn-hover"></div>
+                        <button className={isOpen ? 'chevron up' : 'chevron down'}>
+                            <BsChevronDown />
+                        </button>
+                    </>
                 }
             </div>
-            <ul className= 'dropdown'>
+            <ul className='dropdown'>
                 {desktopScreen &&
                     item.map(item => <li key={item.id}>
                         <Link to={item.path}>{item.name}</Link>
                     </li>)
                 }
-                { !desktopScreen && isOpen &&
+                {!desktopScreen && isOpen &&
                     item.map(item => <li key={item.id}>
                         <Link to={item.path}>{item.name}</Link>
                     </li>)
