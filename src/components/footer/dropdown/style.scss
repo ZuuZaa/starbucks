@@ -4,7 +4,7 @@
     letter-spacing: -.01em;
 
     .title {
-        cursor: pointer;
+        
 
         h3 {
             color: rgba(0, 0, 0, .87);
@@ -17,7 +17,11 @@
         color: rgba(0, 0, 0, .58);
         font-size: 1.6rem;
         padding-block: 0.8rem;
+        &:hover {
+            color: rgba(0,0,0,.87);
+        }
     }
+
 }
 
 @media screen and (min-width: 320px) {
@@ -29,7 +33,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            cursor: pointer;
 
             .chevron {
                 font-size: 1.92rem;
@@ -49,6 +53,7 @@
                     border-radius: 50%;
                     background: transparent;
                     transition: all .5s ease-in-out;
+                    
 
                 }
 
@@ -59,7 +64,7 @@
                 }
 
             &:is(.up) {
-                transform: rotate(180deg) translateY(20%);
+                transform: rotate(180deg);
             }
             }
 
@@ -78,6 +83,9 @@
     .dropdown-container {
         padding-block: 0;
         margin-bottom: 0;
+        .title {
+            cursor: default;
+        }
 
         &:not(:first-child) {
             margin-left: 3.2rem;

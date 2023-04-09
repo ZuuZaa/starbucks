@@ -31,12 +31,9 @@ export const Dropdown = ({ title, item }) => {
                 <h3>{title}</h3>
                 {
                     !desktopScreen &&
-                    <>
-                    <div className="btn-hover"></div>
-                        <button className={isOpen ? 'chevron up' : 'chevron down'}>
-                            <BsChevronDown />
-                        </button>
-                    </>
+                    <button className={isOpen ? 'chevron up' : 'chevron down'}>
+                        <BsChevronDown />
+                    </button>
                 }
             </div>
             <ul className='dropdown'>
