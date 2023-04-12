@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { BsChevronDown } from 'react-icons/bs'
 import './style.scss';
@@ -9,12 +9,12 @@ export const Dropdown = ({ title, item }) => {
     const mediaQuery = window.matchMedia('(min-width: 1024px)');
     const [desktopScreen, setDesktopScreen] = useState(mediaQuery.matches);
 
-    const handleResize = () => setDesktopScreen(mediaQuery.matches);
+    const handleResize = useCallback(() => setDesktopScreen(mediaQuery.matches),[desktopScreen]);
     useEffect(() => {
         window.addEventListener("resize", handleResize, false);
 
         return () => window.removeEventListener("resize", handleResize);
-    }, [desktopScreen, handleResize]);
+    }, [desktopScreen]);
 
 
 
