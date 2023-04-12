@@ -10,6 +10,7 @@ export const Dropdown = ({ title, item }) => {
     const [desktopScreen, setDesktopScreen] = useState(mediaQuery.matches);
 
     const handleResize = useCallback(() => setDesktopScreen(mediaQuery.matches),[mediaQuery.matches]);
+    
     useEffect(() => {
         window.addEventListener("resize", handleResize, false);
 

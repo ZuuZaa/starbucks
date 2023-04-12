@@ -7,11 +7,24 @@
     height: 5rem;
     position: sticky;
     top: 0;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.12), 0 0 2px 0 rgba(0,0,0,.24);
+    z-index: 2;
 
     h2 {
         letter-spacing: 0.1rem;
         text-transform: uppercase;
         font-weight: 700;
+        .title {
+            position: relative;
+            margin-right: .8em;
+            &::after {
+                content: "®";
+                position: absolute;
+                top: 0;
+                right: -0.45em;
+                font-size: 0.5em;
+            }
+        }
     }
 }
 
@@ -36,7 +49,7 @@
         padding-inline: 4rem;
         h2 {
             margin-left: 9rem;
-            font-size: 2.4rem;
+            font-size: 1.6rem;
         }
         .join-btn {
             visibility: visible;
