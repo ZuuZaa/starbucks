@@ -9,12 +9,12 @@ export const Dropdown = ({ title, item }) => {
     const mediaQuery = window.matchMedia('(min-width: 1024px)');
     const [desktopScreen, setDesktopScreen] = useState(mediaQuery.matches);
 
-    const handleResize = useCallback(() => setDesktopScreen(mediaQuery.matches),[desktopScreen]);
+    const handleResize = useCallback(() => setDesktopScreen(mediaQuery.matches),[mediaQuery.matches]);
     useEffect(() => {
         window.addEventListener("resize", handleResize, false);
 
         return () => window.removeEventListener("resize", handleResize);
-    }, [desktopScreen]);
+    },[desktopScreen, handleResize]);
 
 
 
