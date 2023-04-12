@@ -1,0 +1,8 @@
+.main-layout {
+    overflow-x: hidden;
+
+    &:has(.visible) {
+            height: 100vh;
+            overflow-y: hidden;
+    }
+}

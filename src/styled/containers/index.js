@@ -26,16 +26,25 @@ align-items: ${({ ai }) => ai};
 `
 
 export const Container = styled.div`
+padding-inline: ${({ p }) => p};
+padding-block: ${({ pb }) => pb};
 
 @media screen and (min-width: 320px) {
     padding-inline: ${({ p_s }) => p_s};
+    padding-block: ${({ pb_s }) => pb_s};
 }
 
 @media screen and (min-width: 772px) {
     padding-inline: ${({ p_m }) => p_m};
+    padding-block: ${({ pb_m }) => pb_m};
 }
 
 @media screen and (min-width: 1024px) {
     padding-inline: ${({ p_l }) => p_l};
+    padding-block: ${({ pb_l }) => pb_l};
+}
+@media screen and (min-width: 1440px) {
+    padding-inline: ${({ p_xl }) => p_xl};
+    padding-block: ${({ pb_xl }) => pb_xl};
 }
 `

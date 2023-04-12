@@ -1,0 +1,47 @@
+.rewards-navbar {
+    background: #1e3932;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+
+    h2 {
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+
+@media screen and (min-width: 320px) {
+    .rewards-navbar {
+        padding-inline: 1.6rem;
+        h2 {
+            margin-left: 0;
+            font-size: 1.3rem;
+        }
+        .join-btn {
+            visibility: visible;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .rewards-navbar {
+        padding-inline: 4rem;
+        h2 {
+            margin-left: 9rem;
+            font-size: 2.4rem;
+        }
+        .join-btn {
+            visibility: visible;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {}

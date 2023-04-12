@@ -1,0 +1,22 @@
+.banner {
+    display: flex;
+    
+}
+
+@media screen and (min-width: 320px) {
+    .banner {
+        justify-content: center;
+        background: url('../../../assets/images/rewards/star_sm.webp') center/cover;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .banner {
+        justify-content: flex-start;
+        background: url('../../../assets/images/rewards/star_xl.webp') center/cover;
+    }
+}
+
+@media screen and (min-width: 1024px) {}
