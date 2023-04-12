@@ -1,11 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { BsChevronDown, BsChevronUp } from 'react-icons/bs'
+import { BsChevronDown } from 'react-icons/bs'
 import './style.scss';
-// Usage
-
-
-
 
 
 export const Dropdown = ({ title, item }) => {

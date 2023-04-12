@@ -1,20 +1,20 @@
 import { Logo } from "components/header/logo";
 import { ImLocation } from "react-icons/im";
 import { FilledButton, SimpleButton } from 'styled/buttons';
-import { NavLink, useLocation, useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./style.scss";
 import { MenuButton } from "./menuButton";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FlexBox } from "styled/containers";
 
 export const Header = () => {
 
-  const path = useLocation()
+  // const path = useLocation()
 
 
-  const mediaQuery = window.matchMedia('(min-width: 772px)');
+  // const mediaQuery = window.matchMedia('(min-width: 772px)');
 
-  const [screenSize, setScreenSize] = useState(mediaQuery.matches);
+  // const [screenSize, setScreenSize] = useState(mediaQuery.matches);
   const [showNav, setShowNav] = useState(false);
 
 
