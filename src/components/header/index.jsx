@@ -1,7 +1,7 @@
 import { Logo } from "components/header/logo";
 import { ImLocation } from "react-icons/im";
 import { FilledButton, SimpleButton } from 'styled/buttons';
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./style.scss";
 import { MenuButton } from "./menuButton";
 import { useState } from "react";
@@ -9,7 +9,7 @@ import { FlexBox } from "styled/containers";
 
 export const Header = () => {
 
-  // const path = useLocation()
+   const path = useLocation()
 
 
   // const mediaQuery = window.matchMedia('(min-width: 772px)');
