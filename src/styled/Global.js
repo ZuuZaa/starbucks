@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-family: 'SoDo Sans';
     font-size: 62.5%;
@@ -13,7 +14,8 @@ html {
 
 body {
     transition: all 0.3;
-    overflow-x: hidden;
+    color: rgba(0,0,0,.87);
+    font-width: 400;
 }
 
 ul {

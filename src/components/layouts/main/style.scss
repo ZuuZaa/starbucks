@@ -1,8 +1,8 @@
 .main-layout {
-    overflow-x: hidden;
+    overflow-x: clip;
 
     &:has(.visible) {
             height: 100vh;
-            overflow-y: hidden;
+            overflow-y: clip;
     }
 }

@@ -48,3 +48,55 @@ padding-block: ${({ pb }) => pb};
     padding-block: ${({ pb_xl }) => pb_xl};
 }
 `
+
+
+export const Section = styled.section`
+
+    .section-header {
+        text-align: center;
+    }
+    h2 {
+        font-weight: 600;
+        line-height: 1.385;
+    }
+    p {
+        padding-top: 1.6rem;
+        line-height: 1.5;
+
+        a {
+            color: #006241;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+@media screen and (min-width: 320px) {
+
+    padding-block: 3.2rem;
+
+    h2 {
+        font-size: 2.4rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    padding-block: 6.4rem;
+            
+    h2 {
+        font-size: 2.8rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+}
+`
+
+
+

@@ -6,7 +6,7 @@ import './style.scss';
 export const Rewards = () => {
 
   return (
-    <div>
+    <>
       <nav className='rewards-navbar'>
         <h2>
           <span className="title">starbucks </span>
@@ -18,6 +18,6 @@ export const Rewards = () => {
       </nav>
       <Banner />
       <Starters />
-    </div>
+    </>
   )
 }
