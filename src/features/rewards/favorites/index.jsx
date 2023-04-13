@@ -12,7 +12,7 @@ export const Favorites = () => {
     useEffect(() => {
         setActiveItem(favorites[activeIndex])
         console.log(activeItem)
-    }, [activeIndex])
+    }, [activeIndex, activeItem])
     return (
         <Section className='favorites-section'>
             <div className="section-header favorites-header">

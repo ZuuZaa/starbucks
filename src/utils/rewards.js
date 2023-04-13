@@ -4,7 +4,7 @@ import img_100 from 'assets/images/rewards/100.webp';
 import img_200 from 'assets/images/rewards/200.webp';
 import img_300 from 'assets/images/rewards/300.webp';
 import img_400 from 'assets/images/rewards/400.webp';
-import burger from 'assets/images/home/burger.png';
+
 export const starters = [
     {
         id: 1,
