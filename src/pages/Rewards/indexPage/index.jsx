@@ -1,4 +1,5 @@
 import { Banner } from "features/rewards/banner";
+import { Favorites } from "features/rewards/favorites";
 import { Starters } from "features/rewards/starters";
 import { SimpleButton } from "styled/buttons";
 import './style.scss';
@@ -18,6 +19,7 @@ export const Rewards = () => {
       </nav>
       <Banner />
       <Starters />
+      <Favorites />
     </>
   )
 }

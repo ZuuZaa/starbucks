@@ -87,8 +87,7 @@ export const Section = styled.section`
 
 @media screen and (min-width: 768px) {
 
-    padding-block: 6.4rem;
-            
+    padding-block: 6.4rem;            
     h2 {
         font-size: 2.8rem;
     }

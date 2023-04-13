@@ -31,5 +31,7 @@ button {
     outline: none;
     background: inherit;
     cursor: pointer;
+    font-size: inherit;
+    font-weight: inherit;
 }
 `
