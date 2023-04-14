@@ -15,6 +15,10 @@ import get_free from 'assets/images/rewards/3-get-to-free-faster.webp';
 import get_free_1 from 'assets/images/rewards/3A.webp';
 import get_free_2 from 'assets/images/rewards/3B.webp';
 import get_free_3 from 'assets/images/rewards/3C.webp';
+import cash_1A from 'assets/images/rewards/1_A.png';
+import cash_1B from 'assets/images/rewards/1_B.webp';
+import cash_2A from 'assets/images/rewards/2_A.png';
+import cash_2B from 'assets/images/rewards/1_B.webp';
 
 
 
@@ -153,3 +157,45 @@ export const favorites = [
         ]
     },
   ]
+
+
+export const cash = [
+    {
+        id: nanoid(),
+        title: '1★Star per dollar',
+        description: 'Pay as you go',
+        items: [
+            {
+                id: nanoid(),
+                title:'Scan and pay separately',
+                text:'Use cash or credit/debit card at the register.',
+                img: cash_1A 
+            },
+            {
+                id: nanoid(),
+                title:'Save payment in the app',
+                text:'Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step.',
+                img: cash_1B
+            }
+        ]
+    },
+    {
+        id: nanoid(),
+        title: '2★Stars per dollar',
+        description: 'Add funds in the app',
+        items: [
+            {
+                id: nanoid(),
+                title:'Preload',
+                text:'To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.',
+                img: cash_2A
+            },
+            {
+                id: nanoid(),
+                title:'Register your gift card',
+                text:'Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.',
+                img: cash_2B
+            }
+        ]
+    }
+]

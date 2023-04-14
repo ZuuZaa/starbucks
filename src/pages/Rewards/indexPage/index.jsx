@@ -1,4 +1,5 @@
 import { Banner } from "features/rewards/banner";
+import { Cash } from "features/rewards/cash";
 import { Extras } from "features/rewards/extras";
 import { Favorites } from "features/rewards/favorites";
 import { Starters } from "features/rewards/starters";
@@ -22,6 +23,7 @@ export const Rewards = () => {
       <Starters />
       <Favorites />
       <Extras />
+      <Cash/>
     </>
   )
 }
