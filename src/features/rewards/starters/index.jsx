@@ -18,7 +18,7 @@ export const Starters = () => {
                                 <img src={item.img} alt='starter number' />
                             </div>
                             <div className="starter-content">
-                                <h4>{item.title}</h4>
+                                <h3>{item.title}</h3>
                                 <p dangerouslySetInnerHTML={{ __html: item.description }} />
                             </div>
                         </li>

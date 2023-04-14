@@ -1,4 +1,5 @@
 import { Banner } from "features/rewards/banner";
+import { Extras } from "features/rewards/extras";
 import { Favorites } from "features/rewards/favorites";
 import { Starters } from "features/rewards/starters";
 import { SimpleButton } from "styled/buttons";
@@ -20,6 +21,7 @@ export const Rewards = () => {
       <Banner />
       <Starters />
       <Favorites />
+      <Extras />
     </>
   )
 }

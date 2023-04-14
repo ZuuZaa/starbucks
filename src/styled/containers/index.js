@@ -59,6 +59,9 @@ export const Section = styled.section`
         font-weight: 600;
         line-height: 1.385;
     }
+    h3 {
+        font-weight: 600;
+    }
     p {
         padding-top: 1.6rem;
         line-height: 1.5;
@@ -77,8 +80,15 @@ export const Section = styled.section`
 
     padding-block: 3.2rem;
 
+    .section-header p {
+        width: 100%;
+    }
+
     h2 {
         font-size: 2.4rem;
+    }
+    h3 {
+        font-size: 1.9rem;
     }
     p {
         font-size: 1.4rem;
@@ -87,13 +97,28 @@ export const Section = styled.section`
 
 @media screen and (min-width: 768px) {
 
-    padding-block: 6.4rem;            
+    padding-block: 6.4rem;  
+    .section-header p {
+        width: calc(100% / 2);
+        margin: auto;
+    }          
     h2 {
         font-size: 2.8rem;
+    }
+    h3 {
+        font-size: 2.4rem;
+        line-height: 1.5;
     }
     p {
         font-size: 1.6rem;
     }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .section-header p {
+        width: calc(100% / 1.9);
+    }          
 }
 `
 

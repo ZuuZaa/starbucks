@@ -5,4 +5,9 @@
             height: 100vh;
             overflow-y: clip;
     }
+
+    &:has(.modal-open) {
+        height: 100vh;
+        overflow-y: hidden;
+}
 }

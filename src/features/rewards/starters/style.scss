@@ -13,11 +13,6 @@
             object-fit: contain;
         }
 
-        h4 {
-            font-weight: 600;
-            line-height: 1.5;
-        }
-
     }
 
     @media screen and (min-width: 320px) {
@@ -29,10 +24,6 @@
             align-items: center;
             flex-direction: row;
             gap: 1.6rem;
-
-            h4 {
-                font-size: 1.6rem;
-            }
         }
     }
 
@@ -44,11 +35,6 @@
         .starter {
             flex-direction: column;
             gap: 2.4rem;
-
-            h4 {
-                font-size: 1.9rem;
-            }
-
         }
     }
 }
