@@ -12,23 +12,27 @@ export const Cash = () => {
                 </div>
                 <ul className="cash-card-list">
                     {
-                        cash.map(item => <li className='cash-row'>
-                            <span className='row-title'>{item.title}</span>
-                            <p>{item.description}</p>
-                            <ul className='items'>
-                                {item.items.map(
-                                    obj => <li className='cash-col'>
-                                        <div className="img-wrapper">
-                                            <img src={obj.img} alt="card" />
-                                        </div>
-                                        <div className="content">
-                                            <h3>{obj.title}</h3>
-                                            <p>{obj.text}</p>
-                                        </div>
-                                    </li>
-                                )}
-                            </ul>
-                        </li>)
+                        cash.map(item =>
+                            <li className='cash-row'>
+                                <div className='row-title'>
+                                    <h4>{item.title}</h4>
+                                    <p>{item.description}</p>
+                                </div>
+                                <ul className='items'>
+                                    {item.items.map(
+                                        obj =>
+                                            <li className='items-col'>
+                                                <div className="img-wrapper">
+                                                    <img src={obj.img} alt="card" />
+                                                </div>
+                                                <div className="content">
+                                                    <h3>{obj.title}</h3>
+                                                    <p>{obj.text}</p>
+                                                </div>
+                                            </li>
+                                    )}
+                                </ul>
+                            </li>)
                     }
                 </ul>
             </Container>

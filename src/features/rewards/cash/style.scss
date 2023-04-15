@@ -4,18 +4,23 @@
     .section-header {
         padding-bottom: 6.4rem;
     }
+
     .cash-row {
-        
+
         .row-title {
-            font-weight: 600;
+            h4 {
+                font-weight: 600;
+            }
         }
+
         .items {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding-top: 3.2rem;
-            .cash-col {
+            display: flex;
+
+            // padding-top: 3.2rem;
+            .items-col {
                 display: flex;
                 gap: 1.6rem;
+
                 .img-wrapper {
                     img {
                         width: 11.2rem;
@@ -23,9 +28,11 @@
                 }
             }
         }
+
         &:first-child {
-            border-bottom: 0.1rem solid rgba(0,0,0,.1);
+            border-bottom: 0.1rem solid rgba(0, 0, 0, .1);
         }
+
         &:last-child {
             padding-top: 4.8rem;
         }
@@ -33,15 +40,59 @@
 
     @media screen and (min-width: 320px) {
         .cash-row {
-            .row-title {
+            .row-title h4 {
                 font-size: 1.9rem;
+            }
+
+            .items {
+                padding-top: 3.2rem;
+                display: flex;
+                flex-direction: column;
+
+                .items-col {
+                    padding-inline: 0 0.8rem;
+                    padding-bottom: 1.6rem;
+                }
             }
         }
     }
+
     @media screen and (min-width: 768px) {
         .cash-row {
-            .row-title {
+            display: flex;
+            flex-direction: column;
+            padding-block: 0 2.4rem;
+
+            .row-title  h4 {
                 font-size: 2.4rem;
+            }
+
+            .items {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .items-col {
+                    padding-inline: 2.4rem;
+                    padding-bottom: 0;
+                }
+            }
+
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .cash-row {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            padding-block: 3.2rem 2.4rem;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        .cash-row {
+            .items {
+                padding-top: 0;
+                grid-template-columns: repeat(2, 40%);
             }
         }
     }
