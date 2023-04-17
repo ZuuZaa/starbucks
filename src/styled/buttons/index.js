@@ -2,12 +2,24 @@ import styled from 'styled-components';
 import {Link, NavLink} from "react-router-dom";
 
 
+
+export const SimpleLink = styled(Link)`
+font-size: 'inherit' ;
+color: #006241;
+text-decoration: underline;
+cursor: pointer;
+display: inline-block;
+
+&:hover {
+    text-decoration: none;
+}
+`
+
 export const Button = styled(Link)`
 font-size: 1.4rem;
 font-weight: 600;
-color:${({color}) => color}; 
-background:${({bg}) => bg}; 
-padding:${({p}) => p};
+color: inherit; 
+padding:${({p}) => p  || '0.7rem 1.6rem'};
 border-radius: 5rem; 
 margin-top:${({m_top}) => m_top}; 
 margin-left:${({m_left}) => m_left}; 
@@ -24,7 +36,9 @@ border: 0.1rem solid ${({color}) => color};
 `
 
 export const FilledButton = styled(Button)`
-border: 0.1rem solid ${({bg}) => bg};
+color: #fff;
+background:${({bg}) => bg || '#00754a'};
+border: 0.1rem solid ${({bg}) => bg || '#00754a'};
 
 &:hover {
     opacity: 0.8;

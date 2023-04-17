@@ -80,8 +80,11 @@ export const Section = styled.section`
 
     padding-block: 3.2rem;
 
-    .section-header p {
+    .section-header {
+        .header-container {
         width: 100%;
+        padding-inline: 1.6rem;
+        }
     }
 
     h2 {
@@ -98,9 +101,11 @@ export const Section = styled.section`
 @media screen and (min-width: 768px) {
 
     padding-block: 6.4rem;  
-    .section-header p {
-        width: calc(100% / 2);
-        margin: auto;
+    .section-header {
+        .header-container {
+            width: 50%;
+            margin: auto;
+            }
     }          
     h2 {
         font-size: 2.8rem;
@@ -116,7 +121,7 @@ export const Section = styled.section`
 
 @media screen and (min-width: 1024px) {
 
-    .section-header p {
+    .section-header ..header-container  {
         width: calc(100% / 1.9);
     }          
 }

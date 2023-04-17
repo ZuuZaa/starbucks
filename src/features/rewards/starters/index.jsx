@@ -8,6 +8,7 @@ export const Starters = () => {
         <Section className='starters-section'>
             <Container p_s='1.6rem' p_m='2.4rem' p_l='4rem'>
                 <div className="section-header">
+
                     <h2>Getting started is easy</h2>
                     <p>Earn Stars and get rewarded in a few easy steps.</p>
                 </div>

@@ -1,0 +1,118 @@
+.skymiles-section {
+    background-image: url('../../../assets/images/rewards/background.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .section-container {
+        background: #d4e9e2;
+
+        .section-content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img-wrapper {
+                width: 19.5rem;
+                height: 6.5rem;
+                margin-block: 3.2rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            h2 {
+                padding: 1.6rem 4.8rem;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+
+            .link {
+                margin-right: .7em;
+            }
+
+
+        }
+    }
+
+
+    @media screen and (min-width: 320px) {
+        padding: 0;
+
+        .section-container {
+
+            padding: 0.8rem 1.6rem;
+            display: block;
+
+            .section-content {
+                padding-inline: 0;
+                h2 {
+                    font-size: 2.4rem;
+                }
+            }
+
+            .starts-container-right,
+            .starts-container-left {
+                .destktop-img {
+                    display: none;
+                }
+
+                .mobile-img {
+                    display: flex;
+                }
+            }
+
+
+            .starts-container-right {
+                .mobile-img {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 3.2rem;
+
+        .section-container {
+            padding: 4rem 2.4rem;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            align-items: center;
+
+            .section-content {
+
+                padding-inline: 7rem;
+                h2 {
+                    font-size: 2.8rem;
+                }
+            }
+
+            .starts-container-right,
+            .starts-container-left {
+                .mobile-img {
+                    display: none;
+                }
+
+                .destktop-img {
+                    display: block;
+                }
+            }
+
+
+
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .section-container {
+            padding: 4rem;
+        }
+    }
+
+}

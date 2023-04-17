@@ -47,8 +47,8 @@ export const Header = () => {
                 </NavLink>
               </span>
               <FlexBox>
-                <SimpleButton to="login" color='rgba(0,0,0,.87)' p='0.7rem 1.6rem' m_right='1.6rem'>Sign in</SimpleButton>
-                <FilledButton to='join' color='#fff' bg='#000' p='0.7rem 1.6rem'>Join now</FilledButton>
+                <SimpleButton to="login" m_right='1.6rem'>Sign in</SimpleButton>
+                <FilledButton to='join' bg='#000' >Join now</FilledButton>
               </FlexBox>
             </div>
           </nav>

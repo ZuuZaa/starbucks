@@ -7,8 +7,10 @@ export const Cash = () => {
         <Section className='cash-section'>
             <Container p_s='1.6rem' p_m='2.4rem' p_l='4rem'>
                 <div className="section-header">
-                    <h2>Cash or card, you earn Stars</h2>
-                    <p>No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really delicious) Rewards</p>
+                    <div className="section-header">
+                        <h2>Cash or card, you earn Stars</h2>
+                        <p>No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really delicious) Rewards</p>
+                    </div>
                 </div>
                 <ul className="cash-card-list">
                     {

@@ -28,6 +28,7 @@ export const Favorites = () => {
                             </li>)
                     }
                 </ul>
+
             </div>
             <div className="favorites-content">
                 <div className="img-wrapper">

@@ -20,7 +20,7 @@ export const Home = () => {
                   <div className="card-content">
                     <h2>{item.title}</h2>
                     <p>{item.content}</p>
-                    <SimpleButton color='#1e3932' p='0.7rem 1.6rem' to={item.link} m_top='3.2rem'>
+                    <SimpleButton color='#1e3932' to={item.link} m_top='3.2rem'>
                       {item.btnText}
                     </SimpleButton>
                   </div>
