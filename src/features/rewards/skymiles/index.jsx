@@ -1,7 +1,6 @@
 import './style.scss';
 import skymilesLogo from 'assets/images/rewards/delta-skymiles.png';
 import { FilledButton, SimpleLink } from 'styled/buttons';
-import { Link } from 'react-router-dom';
 import star_1 from 'assets/images/rewards/star1.svg';
 import star_2 from 'assets/images/rewards/star2.svg';
 import star_sm_1 from 'assets/images/rewards/starS1.svg';
