@@ -37,7 +37,7 @@ export const FAQs = () => {
                             </div>
                             <div className="col">
                                 <h3>TERMS OF USE</h3>
-                                <p>For full program details visit <SimpleLink>starbucks.com/rewards/terms <HiOutlineExternalLink /></SimpleLink></p>
+                                <p>For full program details visit <SimpleLink to="/">starbucks.com/rewards/terms <HiOutlineExternalLink /></SimpleLink></p>
                                 <p>Earn 1 Star per $1 when digitally loading your Starbucks Card with your Starbucks® Rewards Visa® Card: See your Card Rewards Program Agreement for more details.</p>
                                 <p>Starbucks® Rewards benefits are available at participating Starbucks stores. Not all stores have the ability to honor Rewards at this time. Visit the <SimpleLink to='/'>Starbucks Store Locator <HiOutlineExternalLink /></SimpleLink> and search for locations honoring “Redeem Rewards”.</p>
                                 <p>Deposit and credit card products provided by JPMorgan Chase Bank, N.A. Member FDIC</p>
