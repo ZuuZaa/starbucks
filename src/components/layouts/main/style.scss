@@ -1,13 +1,21 @@
 .main-layout {
-    //overflow-x: clip;
+        overflow-x: clip;
 
-    &:has(.visible) {
-            height: 100vh;
-            overflow-y: clip;
-    }
 
-    &:has(.modal-open) {
-        height: 100vh;
-        overflow-y: hidden;
-}
+
+        &:has(.visible) {
+                height: 100vh;
+        }
+
+        @media screen and (min-width: 320px) {
+                &:has(.visible) {
+                        overflow-y: clip;
+                }
+        }
+
+        @media screen and (min-width: 768px) {
+                &:has(.visible) {
+                        overflow-y: visible;
+                }
+        }
 }
