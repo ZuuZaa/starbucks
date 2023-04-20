@@ -1,7 +1,14 @@
-import React from 'react'
+import { Slider } from 'features/gifts/slider ';
+import {giftsData} from 'utils/gifts';
 
 export const Gifts = () => {
   return (
-    <div>Gifts</div>
+    <main className='page gift-page'>
+<Slider data={giftsData[0].cards}/>
+
+
+
+
+    </main>
   )
 }

@@ -11,7 +11,7 @@ import './style.scss';
 export const Rewards = () => {
 
   return (
-    <>
+    <main className="rewards-page page">
       <nav className='rewards-navbar'>
         <h2>
           <span className="title">starbucks </span>
@@ -28,6 +28,6 @@ export const Rewards = () => {
       <Cash/>
       <SkyMiles/>
       <FAQs/>
-    </>
+    </main>
   )
 }

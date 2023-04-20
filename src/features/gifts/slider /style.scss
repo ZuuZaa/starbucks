@@ -1,0 +1,28 @@
+.slider-container {
+
+    display: flex;
+    justify-content: center;
+
+
+    .slider {
+
+        display: flex;
+        flex-grow: 1;
+       // transform: translateX(-100%);
+        width: calc(100% - 13.1rem);
+
+        img {
+            flex: 0 0 25%;
+            max-width: calc(100% / 4 - 8% / 4);
+            aspect-ratio: 3/2;
+            padding: 1.6rem;
+        }
+    }
+    .handle {
+        background: rgb(255, 255, 255, 0.5);
+        width: 6.55rem;
+        flex-grow: 0;
+        margin-block: 1.6rem;
+        z-index: 2;
+    }
+}

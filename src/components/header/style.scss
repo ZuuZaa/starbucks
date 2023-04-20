@@ -135,6 +135,9 @@
                     box-shadow: inset 0 -6px #00754a;
                 }
             }
+            &:is(.hidden) {
+                transform: translateX(0);
+            }
         }
     }
 
