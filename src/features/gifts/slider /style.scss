@@ -5,11 +5,10 @@
 
 
     .slider {
-
         display: flex;
         flex-grow: 1;
-         transform: translateX(-100%);
         width: calc(100% - 13.1rem);
+        transition: transform 2s ease-in-out;
 
         a {
             display: inline-block;
@@ -53,7 +52,6 @@
             width: 4rem;
             height: 4rem;
             border-radius: 50%;
-            display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
@@ -61,6 +59,12 @@
             color: rgba(0, 0, 0, .6);
             font-size: 2rem;
             text-align: center;
+            &:is(.visible-button) {
+                display: flex;
+            }
+            &:is(.hidden-button) {
+                display: none;
+            }
         }
     }
 }
