@@ -1,5 +1,4 @@
 import './style.scss';
-import bulk from 'assets/images/gifts/bulk.webp';
 import { SimpleButton } from 'styled/buttons';
 
 export const Support = () => {
