@@ -1,6 +1,7 @@
 import { Bulk } from 'features/gifts/bulk';
 import { GiftsExtra } from 'features/gifts/giftsExtra';
 import { Slider } from 'features/gifts/slider ';
+import { Support } from 'features/gifts/support';
 import { giftsData } from 'utils/gifts';
 
 export const Gifts = () => {
@@ -12,6 +13,7 @@ export const Gifts = () => {
         giftsData.slice(1).map(item => <Slider data={item.cards} title={item.category} />)
       }
       <Bulk/>
+      <Support/>
     </main>
   )
 }
