@@ -6,7 +6,6 @@
 
 
     .img-wrapper {
-        width: 37.5rem;
         height: 25rem;
         margin-right: 4rem;
 
@@ -50,8 +49,17 @@
         flex-direction: column;
         padding-top: 2.4rem;
 
+        .img-wrapper {
+            width: 100%;
+        }
         .bulk-content {
             padding-top: 2.4rem;
+        }
+
+    }
+    @media screen and (min-width: 420px) {
+        .img-wrapper {
+            width: 37.5rem;
         }
 
     }

@@ -1,5 +1,5 @@
 .support-section {
-    
+
     background: #edebe9;
     letter-spacing: -0.01em;
     line-height: 1.5;
@@ -14,7 +14,6 @@
     }
 
     p {
-        width: 40rem;
         font-size: var(--p);
     }
 
@@ -30,13 +29,23 @@
         --padding-right: 1.6rem;
         --p: 1.4rem;
 
+        p {
+            width: 100%;
+        }
+
+    }
+
+    @media screen and (min-width: 420px) {
+        p {
+            width: 40rem;
+        }
+
     }
 
     @media screen and (min-width: 768px) {
         --padding-left: 9.9rem;
         --padding-right: 2.4rem;
         --p: 1.6rem;
-
     }
 
     @media screen and (min-width: 1024px) {
@@ -44,9 +53,3 @@
         --padding-right: 4rem;
     }
 }
-
-
-
-
-
-
