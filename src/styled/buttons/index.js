@@ -4,7 +4,8 @@ import {Link, NavLink} from "react-router-dom";
 
 
 export const SimpleLink = styled(Link)`
-font-size: 'inherit' ;
+font-size: inherit ;
+font-weight: inherit;
 color: #006241;
 text-decoration: underline;
 cursor: pointer;
@@ -17,6 +18,7 @@ display: inline-block;
 
 export const Button = styled(Link)`
 font-size: 1.4rem;
+display: inline-block;
 font-weight: 600;
 color: inherit; 
 padding:${({p}) => p  || '0.7rem 1.6rem'};

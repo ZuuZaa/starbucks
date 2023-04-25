@@ -1,0 +1,98 @@
+.gifts-extra {
+
+    padding-block: 2.8rem;
+    background: #d4e9e2;
+    padding-inline: var(--padding-left)  var(--padding-right);
+    margin-block: 1.6rem;
+    display: flex;
+
+    &__content {
+        display: flex;
+        h2 {
+            font-weight: 600;
+            padding-right: 1.6em;
+            letter-spacing: -0.01em;
+            line-height: 1.5;
+            font-size: var(--h2);
+        }
+        p {
+            font-size: var(--font-size);
+            margin-bottom: 0.8em;
+            color: rgba(0,0,0,.58);
+        }
+
+        .buttons-container {
+            display: flex;
+            height: max-content;
+
+        }
+    }
+    &__link {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: var(--font-size);
+        font-weight: 600;
+        padding-top: 2rem;
+        align-self: stretch;
+    }
+
+    @media screen and (min-width: 320px) {
+        --padding-left: 1.6rem;
+        --padding-right: 1.6rem;
+        --font-size: 1.4rem;
+        --h2: 1.9rem;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__content {
+            flex-direction: column;
+            p {
+                padding-right: 0;
+                margin-bottom: 0.8em;
+            }
+            .buttons-container {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-top: 0.8rem;
+            }
+        }
+        &__link {
+            justify-content: flex-end;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        --padding-left: 2.4rem;
+        --padding-right: 2.4rem;
+        --font-size: 1.6rem;
+        --h2: 2.4rem;
+        flex-direction: row;
+        align-items: center;
+
+        &__content {
+            flex-direction: column;
+            p {
+                padding-right: 2.4rem;
+                margin-bottom: 0;
+            }
+            .buttons-container {
+                flex-direction: row;
+                align-items: center;
+                padding-top: 0;
+            }
+        }
+                &__link {
+            justify-content: flex-end;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        --padding-left: 13.1rem;
+        --padding-right: 4rem;
+
+        &__content {
+            flex-direction: row;
+        }
+       
+    }
+}

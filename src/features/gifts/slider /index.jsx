@@ -19,7 +19,7 @@ export const Slider = ({ data, title }) => {
   useEffect(() => {
     const handleWindowResize = () => {
       const screen = window.innerWidth
-      screen > 1024 ? setSize(4): screen < 1024 && screen > 768 ? setSize(3) : setSize(2)
+      screen > 1024 ? setSize(4) : screen < 1024 && screen > 768 ? setSize(3) : setSize(2)
       console.log(size)
     };
 
@@ -30,32 +30,32 @@ export const Slider = ({ data, title }) => {
 
   return (
     <div className='slider-main'>
-    <div className="slider-header">
-    <h2>{title}</h2>
-  <SimpleLink>see all</SimpleLink>
-  </div>
-    <div className='slider-container'>
+      <div className="slider-header">
+        <h2>{title}</h2>
+        <SimpleLink>see all</SimpleLink>
+      </div>
+      <div className='slider-container'>
 
-      <div className="handle handle--left">
-        <button onClick={prev} className={sliderIndex > 0 ? 'visible-button' : 'hidden-button'}>
-          <BsChevronLeft />
-        </button>
+        <div className="handle handle--left">
+          <button onClick={prev} className={sliderIndex > 0 ? 'visible-button' : 'hidden-button'}>
+            <BsChevronLeft />
+          </button>
+        </div>
+        <div className="slider" style={{ transform: `translateX(calc(${sliderIndex} * -100%))` }}>
+          {
+            data.map(url =>
+              <Link to="/" key={nanoid()}>
+                <img src={url} alt="gift card" />
+              </Link>
+            )
+          }
+        </div>
+        <div className="handle handle--right">
+          <button onClick={next} className={data.length / size > 1 ? 'visible-button' : 'hidden-button'}>
+            <BsChevronRight />
+          </button>
+        </div>
       </div>
-      <div className="slider" style={{ transform: `translateX(calc(${sliderIndex} * -100%))` }}>
-        {
-          data.map(url =>
-            <Link to="/"  key={nanoid()}>
-              <img src={url} alt="gift card" />
-            </Link>
-          )
-        }
-      </div>
-      <div className="handle handle--right">
-        <button onClick={next} className={data.length / size > 1 ? 'visible-button' : 'hidden-button'}>
-          <BsChevronRight />
-        </button>
-      </div>
-    </div>
     </div>
   )
 }

@@ -22,32 +22,32 @@ export const giftsData = [
             "https://globalassets.starbucks.com/assets/92a2acfde0d74350bae518afe9928fea.jpg"
         ]
     },
-    {
-        category: "Easter",
-        cards: [
-            "https://globalassets.starbucks.com/assets/aee2fd4b97ef4cfea2adbc321b2739ac.jpg",
-            "https://globalassets.starbucks.com/assets/63fe1c1d9cd74192b5b28d1f0aec6602.jpg",
-            "https://globalassets.starbucks.com/assets/e3775f54027147f8803f85b3bb6d4268.jpg",
-            "https://globalassets.starbucks.com/assets/a77dc2f2976e492686e6e9df7a7d5cc7.jpg"
-        ]
-    },
-    {
-        category: "Sibling`s Day",
-        cards: [
-            "https://globalassets.starbucks.com/assets/9c48c44fafd540e9b79e72508db7698e.jpg",
-            "https://globalassets.starbucks.com/assets/57bd5a19dbe64a30b4f22d7ad6ece127.jpg",
-            "https://globalassets.starbucks.com/assets/5f33e3da4343452fa3922f2f41601df5.jpg"
-        ]
-    },
-    {
-        category: "Pet Lovers",
-        cards: [
-            "https://globalassets.starbucks.com/assets/538d70aafcd640e8a336b1e81db0f5ad.jpg",
-            "https://globalassets.starbucks.com/assets/e6160161a69a472199628d3ea6096efe.jpg",
-            "https://globalassets.starbucks.com/assets/0805c5d04491458a99629554c82f7794.jpg",
-            "https://globalassets.starbucks.com/assets/d0df28dbc08f478eba00b26ca09bffe1.jpg"
-        ]
-    },
+    // {
+    //     category: "Easter",
+    //     cards: [
+    //         "https://globalassets.starbucks.com/assets/aee2fd4b97ef4cfea2adbc321b2739ac.jpg",
+    //         "https://globalassets.starbucks.com/assets/63fe1c1d9cd74192b5b28d1f0aec6602.jpg",
+    //         "https://globalassets.starbucks.com/assets/e3775f54027147f8803f85b3bb6d4268.jpg",
+    //         "https://globalassets.starbucks.com/assets/a77dc2f2976e492686e6e9df7a7d5cc7.jpg"
+    //     ]
+    // },
+    // {
+    //     category: "Sibling`s Day",
+    //     cards: [
+    //         "https://globalassets.starbucks.com/assets/9c48c44fafd540e9b79e72508db7698e.jpg",
+    //         "https://globalassets.starbucks.com/assets/57bd5a19dbe64a30b4f22d7ad6ece127.jpg",
+    //         "https://globalassets.starbucks.com/assets/5f33e3da4343452fa3922f2f41601df5.jpg"
+    //     ]
+    // },
+    // {
+    //     category: "Pet Lovers",
+    //     cards: [
+    //         "https://globalassets.starbucks.com/assets/538d70aafcd640e8a336b1e81db0f5ad.jpg",
+    //         "https://globalassets.starbucks.com/assets/e6160161a69a472199628d3ea6096efe.jpg",
+    //         "https://globalassets.starbucks.com/assets/0805c5d04491458a99629554c82f7794.jpg",
+    //         "https://globalassets.starbucks.com/assets/d0df28dbc08f478eba00b26ca09bffe1.jpg"
+    //     ]
+    // },
     {
         category: "Birthday",
         see: 'See all',
@@ -69,39 +69,44 @@ export const giftsData = [
             "https://globalassets.starbucks.com/assets/6e34062e14484b66a5604c57340103ba.jpg"
         ]
     },
-    {
-        category: "Celebration",
-        cards: [
-            "https://globalassets.starbucks.com/assets/02cc779eadaf4a1891efdc9908eefb89.jpg",
-            "https://globalassets.starbucks.com/assets/fc7d4cb9e0594398b00bfe133a02fad1.jpg",
-            "https://globalassets.starbucks.com/assets/e59a52bdd19448be9096d788b85a5d2f.jpg",
-            "https://globalassets.starbucks.com/assets/7ad856a8cbdd4fbeb0119695a8d5b843.jpg"
-        ]
-    },
+    // {
+    //     category: "Celebration",
+    //     cards: [
+    //         "https://globalassets.starbucks.com/assets/02cc779eadaf4a1891efdc9908eefb89.jpg",
+    //         "https://globalassets.starbucks.com/assets/fc7d4cb9e0594398b00bfe133a02fad1.jpg",
+    //         "https://globalassets.starbucks.com/assets/e59a52bdd19448be9096d788b85a5d2f.jpg",
+    //         "https://globalassets.starbucks.com/assets/7ad856a8cbdd4fbeb0119695a8d5b843.jpg"
+    //     ]
+    // },
     {
         category: "Spring",
         cards: [
             "https://globalassets.starbucks.com/assets/d546023396854e3dbe1d340a21825543.jpg",
             "https://globalassets.starbucks.com/assets/b1bc1467fdd644aa87a83aa96bf8e17d.jpg",
             "https://globalassets.starbucks.com/assets/be090dd487b54f4490b153e00f35136f.jpg",
-            "https://globalassets.starbucks.com/assets/5e0c21687dc64afba35ab74987b5bff5.jpg"
-        ]
-    },
-    {
-        category: "Earth Month",
-        cards: [
+            "https://globalassets.starbucks.com/assets/5e0c21687dc64afba35ab74987b5bff5.jpg",
             "https://globalassets.starbucks.com/assets/8b136f9da31e4e4ebafd0516b448fb98.jpg",
             "https://globalassets.starbucks.com/assets/9a1c7a65cc4e4946a96dcb7fa8afa51a.jpg",
             "https://globalassets.starbucks.com/assets/14206ea6e74a43c6a0a5d4abc81e95bb.jpg"
         ]
     },
+    // {
+    //     category: "Earth Month",
+    //     cards: [
+    //         "https://globalassets.starbucks.com/assets/8b136f9da31e4e4ebafd0516b448fb98.jpg",
+    //         "https://globalassets.starbucks.com/assets/9a1c7a65cc4e4946a96dcb7fa8afa51a.jpg",
+    //         "https://globalassets.starbucks.com/assets/14206ea6e74a43c6a0a5d4abc81e95bb.jpg"
+    //     ]
+    // },
     {
         category: "Apreciation",
         cards: [
             "https://globalassets.starbucks.com/assets/3d9173ceb399494483d37c5c7d88958d.jpg",
             "https://globalassets.starbucks.com/assets/9e106226562b40a2b2a149db572cca58.jpg",
             "https://globalassets.starbucks.com/assets/b1061db1fc834e429a9a4bfa5de5e884.jpg",
-            "https://globalassets.starbucks.com/assets/97be32ff56b54da5aa361cd9a6d24977.jpg"
+            "https://globalassets.starbucks.com/assets/97be32ff56b54da5aa361cd9a6d24977.jpg",
+            "https://globalassets.starbucks.com/assets/1c47ac4f6e914144b8d6a2e3489f316e.jpg"
+
         ]
     },
     {
@@ -126,16 +131,16 @@ export const giftsData = [
                 "https://globalassets.starbucks.com/assets/1c47ac4f6e914144b8d6a2e3489f316e.jpg"
             ]
     },
-    {
-        category: "Encouragement",
-        cards:
-            [
-                "https://globalassets.starbucks.com/assets/0f7b291e505e45d29fde0c4d7b732140.jpg",
-                "https://globalassets.starbucks.com/assets/c58f11e8197f4b608a1d7a751779fca3.jpg",
-                "https://globalassets.starbucks.com/assets/ff23ba2daa464e579e528cbd04749e24.jpg",
-                "https://globalassets.starbucks.com/assets/27ade48b639f44a59ed702914a194454.jpg"
-            ]
-    },
+    // {
+    //     category: "Encouragement",
+    //     cards:
+    //         [
+    //             "https://globalassets.starbucks.com/assets/0f7b291e505e45d29fde0c4d7b732140.jpg",
+    //             "https://globalassets.starbucks.com/assets/c58f11e8197f4b608a1d7a751779fca3.jpg",
+    //             "https://globalassets.starbucks.com/assets/ff23ba2daa464e579e528cbd04749e24.jpg",
+    //             "https://globalassets.starbucks.com/assets/27ade48b639f44a59ed702914a194454.jpg"
+    //         ]
+    // },
     {
         category: "Affection",
         cards:

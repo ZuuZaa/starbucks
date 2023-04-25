@@ -1,18 +1,21 @@
 .slider-main {
     padding-block: .8rem;
     @media screen and (min-width: 320px) {
+        --padding-left: 1.6rem;
+        --padding-right: 1.6rem;
         --size: 2;
-        --padding-left: 0.8rem;
         --h2: 1.3rem;
     }
     @media screen and (min-width: 768px) {
+        --padding-left: 2.4rem;
+        --padding-right: 2.4rem;
         --size: 3;
-        --padding-left: 1.6rem;
-        font-size: 1.4rem;
+        --h2: 1.4rem;
     }
     @media screen and (min-width: 1024px) {
-        --size: 4;
         --padding-left: 13.1rem;
+        --padding-right: 4rem;
+        --size: 4;
     }
 }
 
@@ -20,11 +23,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: var(--padding-left) 4rem;
+    padding-inline: var(--padding-left)  var(--padding-right);
     padding-block:  0.8rem;
+    font-size: var(--h2);
     h2 {
         line-height: 1.5;
-        font-size: --h2;
         letter-spacing: 0.1em;
         font-weight: 700;
         text-transform: uppercase;
@@ -36,9 +39,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-    
-
-
 
     .slider {
         display: flex;
