@@ -1,22 +1,61 @@
-.slider-container {
+.slider-main {
+    padding-block: .8rem;
+    @media screen and (min-width: 320px) {
+        --size: 2;
+        --padding-left: 0.8rem;
+        --h2: 1.3rem;
+    }
+    @media screen and (min-width: 768px) {
+        --size: 3;
+        --padding-left: 1.6rem;
+        font-size: 1.4rem;
+    }
+    @media screen and (min-width: 1024px) {
+        --size: 4;
+        --padding-left: 13.1rem;
+    }
+}
 
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: var(--padding-left) 4rem;
+    padding-block:  0.8rem;
+    h2 {
+        line-height: 1.5;
+        font-size: --h2;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+}
+
+.slider-container {
     display: flex;
     justify-content: center;
+    position: relative;
+    
+
 
 
     .slider {
         display: flex;
         flex-grow: 1;
-        width: calc(100% - 13.1rem);
         transition: transform 2s ease-in-out;
+        width: calc(100% - var(--padding-left));
+        margin-left: var(--padding-left);
 
         a {
             display: inline-block;
-            flex: 0 0 25%;
-            max-width: calc(100% / 4 - 13.1rem / 4);
-            aspect-ratio: 3/2;
+            aspect-ratio: 16 / 9;
             margin: 1.6rem;
-
+            &:first-child {
+                margin-inline: 0 1.6rem;
+            }
+            flex: 0 0 calc( 100% / var(--size)  ) ;
+            //max-width: calc(100% / 4 - 13.2rem / 4);
 
             img {
                 width: 100%;
@@ -38,14 +77,25 @@
     }
 
     .handle {
-        background: rgb(255, 255, 255, 0.5);
-        width: 6.55rem;
-        flex-grow: 0;
-        margin-block: 1.6rem;
+        position: absolute;
+        width: 8rem;
+        height: 100%;
+        padding-block: 1.6rem;
         z-index: 2;
         display: flex;
         justify-content: center;
         align-items: center;
+        &--left {
+            top: 0;
+            left: 0;
+            button {
+                transform: translateX(--padding-left);
+            }
+        }
+        &--right {
+            top: 0;
+            right: 0;
+        }
 
         button {
             background: #fff;
@@ -55,13 +105,15 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            box-shadow: 0 0 6px rgba(0,0,0,.24), 0 8px 12px rgba(0,0,0,.14);
+            box-shadow: 0 0 6px rgba(0, 0, 0, .24), 0 8px 12px rgba(0, 0, 0, .14);
             color: rgba(0, 0, 0, .6);
             font-size: 2rem;
             text-align: center;
+
             &:is(.visible-button) {
                 display: flex;
             }
+
             &:is(.hidden-button) {
                 display: none;
             }
