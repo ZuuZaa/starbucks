@@ -9,52 +9,52 @@ import { FlexBox } from "styled/containers";
 
 export const Header = () => {
 
-   const path = useLocation()
-
-
-  // const mediaQuery = window.matchMedia('(min-width: 772px)');
-
-  // const [screenSize, setScreenSize] = useState(mediaQuery.matches);
+  const path = useLocation()
   const [showNav, setShowNav] = useState(false);
 
 
   return (
     <header className="header">
-      <Logo />
 
-      {
-        path.pathname !== '/login' && path.pathname !== "/join" &&
-        <>
-          <MenuButton showNav={showNav} setShowNav={setShowNav} />
-          <nav className={`navbar ${(showNav ? 'visible' : 'hidden')}`}>
-            <ul className="navbar__list navbar__list--left-side">
-              <li className="navlink">
-                <NavLink to="menu">menu</NavLink>
-              </li>
-              <li className="navlink">
-                <NavLink to="rewards">rewards</NavLink>
-              </li>
-              <li className="navlink">
-                <NavLink to="gifts">gift cards</NavLink>
-              </li>
-            </ul>
-            <hr />
-            <div className="navbar__list navbar__list--right-side">
-              <span className="navlink">
-                <NavLink to="location" >
-                  <ImLocation />
-                  Find a store
-                </NavLink>
-              </span>
-              <FlexBox>
-                <SimpleButton to="login" m_right='1.6rem'>Sign in</SimpleButton>
-                <FilledButton to='join' bg='#000' >Join now</FilledButton>
-              </FlexBox>
+      <div className="header-container">
+        <Logo />
+        {
+          path.pathname !== '/login' && path.pathname !== "/join" &&
+          <>
+
+            <div className={`collapse-wrapper ${(showNav ? 'visible' : 'hidden')}`} onClick={()=> setShowNav(false)}>
+              <nav className="navbar">
+                <ul className="navbar__list navbar__list--left-side">
+                  <li className="navlink">
+                    <NavLink to="menu">menu</NavLink>
+                  </li>
+                  <li className="navlink">
+                    <NavLink to="rewards">rewards</NavLink>
+                  </li>
+                  <li className="navlink">
+                    <NavLink to="gifts">gift cards</NavLink>
+                  </li>
+                </ul>
+                <hr />
+                <div className="navbar__list navbar__list--right-side">
+                  <span className="navlink">
+                    <NavLink to="location" >
+                      <ImLocation />
+                      Find a store
+                    </NavLink>
+                  </span>
+                  <FlexBox>
+                    <SimpleButton to="login" m_right='1.6rem'>Sign in</SimpleButton>
+                    <FilledButton to='join' bg='#000' >Join now</FilledButton>
+                  </FlexBox>
+                </div>
+              </nav>
             </div>
-          </nav>
-        </>
-      }
 
+            <MenuButton showNav={showNav} setShowNav={setShowNav} />
+          </>
+        }
+      </div>
     </header>
   )
 }

@@ -7,9 +7,12 @@ import './style.scss';
 export const MainLayout = () => {
   return (
     <div className="main-layout">
-        <Header/>
-        <Outlet/>
-        <Footer/>
+      <Header />
+      <div className="page-layout">
+        <Outlet />
+      </div>
+      <Footer />
+
     </div>
   )
 }

@@ -4,10 +4,12 @@ import logo from "assets/icons/logo.svg";
 
 export const Logo = () => {
     return (
-        <Link to="/">
-            <div className="logo-wrapper">
+
+        <div className="logo-wrapper">
+            <Link to="/">
                 <img src={logo} alt="logo" />
-            </div>
-        </Link>
+            </Link>
+        </div >
+
     )
 }
