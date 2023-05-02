@@ -1,0 +1,72 @@
+.bulk-section {
+  background: #f9f9f9;
+  padding-block: 4rem;
+  padding-inline: var(--padding-left) var(--padding-right);
+  display: flex;
+}
+.bulk-section .img-wrapper {
+  height: 25rem;
+  margin-right: 4rem;
+}
+.bulk-section .img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.bulk-section .bulk-content {
+  padding-inline: 1.6rem 5.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+}
+.bulk-section .bulk-content a {
+  align-self: flex-start;
+}
+.bulk-section .bulk-content h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+.bulk-section .bulk-content p {
+  width: 30.3rem;
+  color: rgba(0, 0, 0, 0.58);
+  font-size: var(--p);
+}
+@media screen and (min-width: 320px) {
+  .bulk-section {
+    --padding-left: 1.6rem;
+    --padding-right: 1.6rem;
+    --p: 1.4rem;
+    flex-direction: column;
+    padding-top: 2.4rem;
+  }
+  .bulk-section .img-wrapper {
+    width: 100%;
+  }
+  .bulk-section .bulk-content {
+    padding-top: 2.4rem;
+  }
+}
+@media screen and (min-width: 420px) {
+  .bulk-section .img-wrapper {
+    width: 37.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bulk-section {
+    --padding-left: 9.9rem;
+    --padding-right: 2.4rem;
+    --p: 1.6rem;
+    flex-direction: row;
+  }
+  .bulk-section .bulk-content {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bulk-section {
+    --padding-left: 13.1rem;
+    --padding-right: 4rem;
+  }
+}/*# sourceMappingURL=style.css.map */

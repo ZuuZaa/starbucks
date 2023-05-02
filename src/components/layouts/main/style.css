@@ -1,0 +1,22 @@
+.main-layout .page-layout {
+  padding-top: 7.3rem;
+}
+.main-layout:has(.visible) {
+  height: 100vh;
+}
+@media screen and (min-width: 320px) {
+  .main-layout:has(.visible) {
+    overflow-y: clip;
+  }
+  .main-layout .page-layout {
+    padding-top: 7.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-layout:has(.visible) {
+    overflow-y: visible;
+  }
+  .main-layout .page-layout {
+    padding-top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

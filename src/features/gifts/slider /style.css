@@ -1,0 +1,114 @@
+.slider-main {
+  padding-block: 0.8rem;
+}
+@media screen and (min-width: 320px) {
+  .slider-main {
+    --padding-left: 1.6rem;
+    --padding-right: 1.6rem;
+    --size: 2;
+    --h2: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slider-main {
+    --padding-left: 9.9rem;
+    --padding-right: 2.4rem;
+    --size: 3;
+    --h2: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slider-main {
+    --padding-left: 13.1rem;
+    --padding-right: 4rem;
+    --size: 4;
+  }
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--padding-left) var(--padding-right);
+  padding-block: 0.8rem;
+  font-size: var(--h2);
+}
+.slider-header h2 {
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.slider-container .slider {
+  display: flex;
+  flex-grow: 1;
+  transition: transform 2s ease-in-out;
+  width: calc(100% - var(--padding-left));
+  margin-left: var(--padding-left);
+}
+.slider-container .slider a {
+  display: inline-block;
+  aspect-ratio: 16/9;
+  margin: 1.6rem;
+  flex: 0 0 calc(100% / var(--size));
+}
+.slider-container .slider a:first-child {
+  margin-inline: 0 1.6rem;
+}
+.slider-container .slider a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7rem;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.34);
+  transition: all 0.3s;
+}
+.slider-container .slider a img:hover {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.14);
+  transform: translateY(-6%);
+}
+.slider-container .handle {
+  position: absolute;
+  width: 8rem;
+  height: 100%;
+  padding-block: 1.6rem;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-container .handle--left {
+  top: 0;
+  left: 0;
+}
+.slider-container .handle--left button {
+  transform: translateX(--padding-left);
+}
+.slider-container .handle--right {
+  top: 0;
+  right: 0;
+}
+.slider-container .handle button {
+  background: #fff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.24), 0 8px 12px rgba(0, 0, 0, 0.14);
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 2rem;
+  text-align: center;
+}
+.slider-container .handle button:is(.visible-button) {
+  display: flex;
+}
+.slider-container .handle button:is(.hidden-button) {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

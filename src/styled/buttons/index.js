@@ -20,7 +20,7 @@ export const Button = styled(Link)`
 font-size: 1.4rem;
 display: inline-block;
 font-weight: 600;
-color: inherit; 
+color: ${({color}) => color  || 'inherit'}; 
 padding:${({p}) => p  || '0.7rem 1.6rem'};
 border-radius: 5rem; 
 margin-top:${({m_top}) => m_top}; 
@@ -33,7 +33,7 @@ export const SimpleButton = styled(Button)`
 border: 0.1rem solid ${({color}) => color};
 
 &:hover {
-    background: rgba(0,0,0,.1);
+    background: ${({bg}) => bg ||' rgba(0,0,0,.1)'};
 }
 `
 

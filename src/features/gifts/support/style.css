@@ -1,0 +1,48 @@
+.support-section {
+  background: #edebe9;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+  padding-inline: var(--padding-left) var(--padding-right);
+  padding-block: 4rem;
+}
+.support-section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.support-section p {
+  font-size: var(--p);
+}
+.support-section .buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+@media screen and (min-width: 320px) {
+  .support-section {
+    --padding-left: 1.6rem;
+    --padding-right: 1.6rem;
+    --p: 1.4rem;
+  }
+  .support-section p {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 420px) {
+  .support-section p {
+    width: 40rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .support-section {
+    --padding-left: 9.9rem;
+    --padding-right: 2.4rem;
+    --p: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .support-section {
+    --padding-left: 13.1rem;
+    --padding-right: 4rem;
+  }
+}/*# sourceMappingURL=style.css.map */
