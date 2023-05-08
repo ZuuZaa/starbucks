@@ -8,7 +8,6 @@ export const Location = () => {
   return (
     <div className="location-page">
       <div className="page-container">
-
         <div className="info-part">
           <div>
             <div className="search-box">
