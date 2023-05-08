@@ -15,7 +15,7 @@ export const Extras = () => {
     }
     return (
         <Section className='extras-section'>
-            <Container p_s='1.6rem' p_m='2.4rem' p_l='4rem'>
+            <Container>
                 <div className="section-header">
                     <div className="section-header">
                         <h2>Endless Extras</h2>
@@ -37,7 +37,6 @@ export const Extras = () => {
 
                     )}
                     {modalIsOpen && <Modal className='modal modal-open' items={activeItem} setModal={setModalIsOpen}>modal</Modal>}
-
                 </ul>
             </Container>
         </Section>

@@ -8,7 +8,7 @@ import './style.scss';
 export const Home = () => {
   return (
     <main className='page home-page'>
-      <Container p_l='0' p_xl='7%' pb='4rem'>
+      <Container p_s='0' p_m='0' p_l='0' p_xl='7%' pb='4rem'>
         <ul className='home-page__content'>
           {
             homeDetails.map(item =>

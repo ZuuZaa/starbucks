@@ -19,7 +19,7 @@ export const FAQs = () => {
                 </div>
             </div>
             <div className="faqs-content">
-                <Container p_s='1.6rem' p_m='2.4rem' p_l='4rem' pb_s='3.2rem' pb_m='4rem'>
+                <Container pb_s='3.2rem' pb_m='4rem'>
                     <div className="content-header">
                         <p>At participating stores. Restrictions apply.</p>
                         <p>* Excludes taxes and gratuities. At participating stores. Some restrictions apply. Flights purchased close to departure may not earn double Stars.</p>
@@ -53,11 +53,9 @@ export const FAQs = () => {
                                 <p>Rewards cannot be redeemed for alcoholic beverages or multi-serve items. You pay the difference for any beverage customization over $1 and/or merchandise item over $20. Not all stores honor tiered Rewards. Select stores redeem 200 Stars for free food or drink items only.</p>
                             </div>
                         </div>
-
                     </div>
                 </Container>
             </div>
-
         </Section>
     )
 }

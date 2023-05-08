@@ -13,14 +13,13 @@ export const Slider = ({ data, title }) => {
   const sliderSize = size * sliderIndex;
 
   const prev = () => sliderSize > 0 && setSliderIndex(sliderIndex - 1);
-  const next = () => sliderSize < data.length - size && setSliderIndex(sliderIndex + 1); console.log("click")
+  const next = () => sliderSize < data.length - size && setSliderIndex(sliderIndex + 1); 
 
 
   useEffect(() => {
     const handleWindowResize = () => {
       const screen = window.innerWidth
       screen > 1024 ? setSize(4) : screen < 1024 && screen > 768 ? setSize(3) : setSize(2)
-      console.log(size)
     };
 
     window.addEventListener('resize', handleWindowResize);
@@ -35,7 +34,6 @@ export const Slider = ({ data, title }) => {
         <SimpleLink>see all</SimpleLink>
       </div>
       <div className='slider-container'>
-
         <div className="handle handle--left">
           <button onClick={prev} className={sliderIndex > 0 ? 'visible-button' : 'hidden-button'}>
             <BsChevronLeft />

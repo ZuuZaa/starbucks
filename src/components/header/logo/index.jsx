@@ -4,7 +4,6 @@ import logo from "assets/icons/logo.svg";
 
 export const Logo = () => {
     return (
-
         <div className="logo-wrapper">
             <Link to="/">
                 <img src={logo} alt="logo" />

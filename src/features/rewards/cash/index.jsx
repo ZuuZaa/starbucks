@@ -5,7 +5,7 @@ import { cash } from 'utils/rewards';
 export const Cash = () => {
     return (
         <Section className='cash-section'>
-            <Container p_s='1.6rem' p_m='2.4rem' p_l='4rem'>
+            <Container>
                 <div className="section-header">
                     <div className="section-header">
                         <h2>Cash or card, you earn Stars</h2>

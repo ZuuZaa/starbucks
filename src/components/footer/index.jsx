@@ -8,7 +8,7 @@ import './style.scss';
 export const Footer = () => {
   return (
     <footer className='footer'>
-        <Container p_s='2.4rem' p_l='4rem'>
+        <Container p_s='2.4rem'>
             <nav className='footer-navigation'>
                 {footerLinks.map(item => <Dropdown key={item.id} {...item}/>)}
             </nav>

@@ -1,9 +1,9 @@
 .main-layout {
-       // overflow-x: clip;
+        overflow-x: clip;
 
-       .page-layout {
-        padding-top: 7.3rem;
-       }
+        .page-layout {
+                padding-top: 7.3rem;
+        }
 
         &:has(.visible) {
                 height: 100vh;
@@ -13,17 +13,19 @@
                 &:has(.visible) {
                         overflow-y: clip;
                 }
+
                 .page-layout {
                         padding-top: 7.3rem;
-                       }
+                }
         }
 
         @media screen and (min-width: 768px) {
                 &:has(.visible) {
                         overflow-y: visible;
                 }
+
                 .page-layout {
                         padding-top: 0;
-                       }
+                }
         }
 }

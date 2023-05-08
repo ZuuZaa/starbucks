@@ -10,7 +10,7 @@ export const Gifts = () => {
       <Slider data={giftsData[0].cards} title='Featured' />
       <GiftsExtra/>
       {
-        giftsData.slice(1).map(item => <Slider data={item.cards} title={item.category} />)
+        giftsData.slice(1).map(item => <Slider key={item.category} data={item.cards} title={item.category} />)
       }
       <Bulk/>
       <Support/>
