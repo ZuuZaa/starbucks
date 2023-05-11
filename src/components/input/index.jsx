@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 import { BsEye, BsEyeSlash } from 'react-icons/bs';
 
 
-export const Input = ({ id, type, label, error, hint, conditions }) => {
+export const Input = ({ id, type, label, error, hint, conditions, min,max, length }) => {
 
 
     const path = useLocation().pathname
@@ -32,6 +32,9 @@ export const Input = ({ id, type, label, error, hint, conditions }) => {
                         type === 'password' ?
                             (showPass ? 'text' : 'password') : type
                     }
+                    min={min} 
+                    max={max} 
+                    maxLength={length}
                     onBlur={blurHandler}
                     onChange={changeHandler}
                 />

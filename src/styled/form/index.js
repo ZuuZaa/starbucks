@@ -32,10 +32,25 @@ input {
     padding: 1.2rem 1.6rem;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .asterix {
     color: #00754a;
     font-size: 1.6rem;
     margin-right: 0.4rem;
+}
+
+.hint {
+    font-size: 1.4rem;
+    padding-top: 0.8rem;
 }
 
 
@@ -43,9 +58,7 @@ input {
     label {
         transform: translateY(-3rem);
         font-size: 1.2rem;
-    }
-    .asterix {
-        display: none;
+        color: #00754a;
     }
 }
 
@@ -76,7 +89,9 @@ input {
         input {
             box-shadow: 0 0 0 1px #d62b1f;
         }
-
+        label, .asterix {
+            color: #d62b1f;
+        }
         .error {
             display: flex;
             justify-content: center;

@@ -37,5 +37,19 @@ export const formInputsData = [
         label: "Email address",
         error: "Please enter your email address.",
         hint: "This will be your username"
+    },
+    {
+        id: "card-number",
+        type: "number",
+        label: "Card Number (16 digits)",
+        error: "A valid Starbucks card number has 16 digits.",
+        hint: "No spaces or dashes"
+    },
+    {
+        id: "security-code",
+        type: "number",
+        label: "Security Code",
+        error: "A valid security code has 8 digits.",
+        hint: "Scratch to reveal 8-digit code"
     }
 ]
