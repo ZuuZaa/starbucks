@@ -91,7 +91,15 @@
             }
 
             .search-box {
+                background: #fff;
                 padding-block: 1.6rem;
+                position: absolute;
+                //z-index: 2;
+                box-shadow: 0 -1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding-inline: 2.4rem;
             }
         }
     }
@@ -110,7 +118,11 @@
             }
 
             .search-box {
-                padding-block: 2.4rem;
+                position: static;
+                width: 100%;
+                padding-inline: 0;
+                box-shadow: none;
+                transform: translateY(0.4rem);
             }
         }
 

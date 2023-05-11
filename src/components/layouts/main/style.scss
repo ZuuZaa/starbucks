@@ -1,8 +1,37 @@
 .main-layout {
         overflow-x: clip;
 
+        @keyframes proggress {
+                0% {
+                        transform: translateX(-100%);
+                }
+
+                100% {
+                        transform: translateX(500%);
+                }
+        }
+
+
+        main {
+                position: relative;
+
+                &::before {
+                        content: "";
+                        position: absolute;
+                        top: -10rem;
+                        height: 0.6rem;
+                        width: 20%;
+                        background: #00754a;
+                        animation: proggress 1s;
+                        transform: translateX(-100%);
+                        z-index: 9;
+
+                }
+        }
+
         .page-layout {
                 padding-top: 7.3rem;
+
         }
 
         &:has(.visible) {
@@ -19,7 +48,7 @@
                 }
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 772px) {
                 &:has(.visible) {
                         overflow-y: visible;
                 }

@@ -10,7 +10,7 @@ max-width: 50rem;
     box-shadow: none;
     padding: 1.6rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 772px) {
     padding: 3.2rem;
     border-radius: 1.2rem;
     box-shadow: 0 2px 4px rgba(0,0,0,.07), 0 4px 5px rgba(0,0,0,.06), 0 1px 10px rgba(0,0,0,.1);

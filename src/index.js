@@ -5,12 +5,13 @@ import 'assets/font/fonts.module.css';
 import { GlobalStyles } from 'styled/Global';
 import { BrowserRouter } from 'react-router-dom';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <GlobalStyles />
-      <App />
+        <App />
     </BrowserRouter>
   </React.StrictMode>
 );

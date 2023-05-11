@@ -1,9 +1,7 @@
 import { Fieldset } from 'styled/form';
-import './style.scss';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { BsEye, BsEyeSlash } from 'react-icons/bs';
-
 
 export const Input = ({ id, type, label, error, hint, conditions, min,max, length }) => {
 

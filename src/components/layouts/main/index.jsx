@@ -10,6 +10,7 @@ export const MainLayout = () => {
 
   return (
     <div className="main-layout">
+      <div className="progress-bar"></div>
       <Header />
       <div className="page-layout">
         <Outlet />

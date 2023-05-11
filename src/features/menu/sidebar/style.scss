@@ -1,0 +1,25 @@
+.menu-sidebar {
+
+    padding-left: 13.1rem;
+    
+    .category-name {
+        font-size: 1.9rem;
+        font-weight: 600;
+        padding-block: 2.4rem;
+    }
+    .product-name {
+        color: rgba(0,0,0,.58);
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding-block: 1rem;
+        cursor: pointer;
+        width: 15rem;
+    }
+
+    @media screen and (min-width:320px) {
+        display: none;
+    }
+    @media screen and (min-width:1024px) {
+        display: block;
+    }
+}

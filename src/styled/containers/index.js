@@ -98,7 +98,7 @@ export const Section = styled.section`
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 772px) {
 
     padding-block: 6.4rem;  
     .section-header {

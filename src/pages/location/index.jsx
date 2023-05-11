@@ -6,7 +6,7 @@ import { SimpleButton, SimpleLink } from 'styled/buttons'
 
 export const Location = () => {
   return (
-    <div className="location-page">
+    <main className="location-page">
       <div className="page-container">
         <div className="info-part">
           <div>
@@ -44,6 +44,6 @@ export const Location = () => {
         </div>
         <Map />
       </div>
-    </div>
+    </main>
   )
 }
