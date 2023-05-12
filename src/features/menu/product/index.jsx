@@ -2,14 +2,14 @@ import { useParams } from 'react-router-dom';
 import './style.scss';
 import data from "data/MenuAllDatas";
 import { useState } from 'react';
-import { CiCoffeeCup } from 'react-icons/ci';
 import { customizations } from 'utils/customize';
 import { AiFillStar } from 'react-icons/ai';
-import { SimpleButton } from 'styled/buttons';
+import { EditButton, FilledButton, SimpleButton } from 'styled/buttons';
 import { BsChevronDown } from 'react-icons/bs';
 import basket from 'assets/icons/basket.svg';
 import { Container } from 'styled/containers';
 import { SlLocationPin } from 'react-icons/sl';
+
 
 export const Product = () => {
   const id = useParams().id
@@ -17,7 +17,6 @@ export const Product = () => {
   const [sizeIndex, setSizeIndex] = useState(1)
   const selectedSize = product.sizes[sizeIndex]
 
-  console.log(product)
   return (
     <div className="product">
       <div className="bread-crumb">
@@ -39,7 +38,7 @@ export const Product = () => {
         </Container>
       </div>
       <div className="options-container">
-        <Container p_m='10rem 2.4rem' p_l='13.1rem 4rem'>
+        <Container pb='3.2rem' p_m='10rem 2.4rem' p_l='13.1rem 4rem'>
           <div className="options">
             <div className="size-options">
               <h3 className="title">
@@ -58,20 +57,27 @@ export const Product = () => {
                         onChange={() => setSizeIndex(index)}
                       />
                       <label htmlFor={item.size.toLowerCase()}>
-                        <span className="icon-wrapper">
-                          <CiCoffeeCup className={item.size.toLowerCase()} />
-                        </span>
+                        <div className="icon-wrapper">
+                          <img
+                            src={
+                              index === sizeIndex
+                                ? 'https://www.starbucks.com/app-assets/c6d5ff0dfccfc8966d3ad8ab2331921f.svg'
+                                : 'https://www.starbucks.com/app-assets/76b8892b0db8f5d411988fe1bbbe4141.svg'
+                            }
+                            alt='cup size'
+                            className={item.size.toLowerCase()} />
+                        </div>
                         <h4>{item.size}</h4>
                         <p>{item.capacity}</p>
                       </label>
                     </div>
                   )
                 }
-                <p className="location">
-                  <SlLocationPin />
-                  Select a store to view availability
-                </p>
               </form>
+              <p className="location">
+                <SlLocationPin />
+                Select a store to view availability
+              </p>
             </div>
             <div className="customizations">
               <h3 className="title">Customizations</h3>
@@ -80,8 +86,10 @@ export const Product = () => {
                 {customizations.map(
                   item => (
                     <li className='customize-category'>
-                      <span>{item.title}</span>
-                      <button>Edit</button>
+                      <EditButton>
+                        <span>{item.title}</span>
+                        <button>Edit</button>
+                      </EditButton>
                     </li>
                   )
                 )}
@@ -91,31 +99,36 @@ export const Product = () => {
         </Container>
       </div>
       <div className="section-extra">
-        <span>200 <AiFillStar /> item</span>
-        <p>Starbucks Blonde Espresso infused with Partanna® extra virgin
-          olive oil, steamed with oatmilk. Velvety smooth. Deliciously lush.</p>
-        <h5>330 calories, 6g sugar, 23g fat <button className='info'>i</button></h5>
-        <SimpleButton color="#fff">Full nutrition & ingredients list</SimpleButton>
+        <Container pb='3.2rem' p_m='10rem 2.4rem' p_l='13.1rem 4rem'>
+          <div className="extra-content">
+            <span>200 <AiFillStar /> item</span>
+            <p>Starbucks Blonde Espresso infused with Partanna® extra virgin
+              olive oil, steamed with oatmilk. Velvety smooth. Deliciously lush.</p>
+            <h5>330 calories, 6g sugar, 23g fat <button className='info'>i</button></h5>
+            <SimpleButton color="#fff">Full nutrition & ingredients list</SimpleButton>
+          </div>
+        </Container>
       </div>
       <div className='section-footer'>
-        <div className="location">
-          <div className="content">
-            <p>For item availability</p>
-            <h4>Choose location</h4>
+        <FilledButton p='1.8rem 2.4rem' className='add-btn'>Add to Order</FilledButton>
+        <Container pb='3.2rem' p_m='20%' p_l='30%'>
+          <div className="location">
+            <div className="content">
+              <p>For item availability</p>
+              <h4>Choose location</h4>
+            </div>
+            <button>
+              <BsChevronDown />
+            </button>
           </div>
-          <button>
-            <BsChevronDown />
-          </button>
-        </div>
-        <div className="basket">
-          <div className="icon-wrapper">
-            <img src={basket} alt="basket" />
-            <span>1</span>
+          <div className="basket">
+            <div className="icon-wrapper">
+              <img src={basket} alt="basket" />
+              <span>1</span>
+            </div>
           </div>
-        </div>
+        </Container>
       </div>
     </div>
-
-
   )
 }

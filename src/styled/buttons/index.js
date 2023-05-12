@@ -57,3 +57,22 @@ display: grid;
 place-items: center;
 margin: 1rem;
 `
+
+export const EditButton = styled(Button)`
+border: 0.1rem solid rgba(0,0,0,.4);
+border-radius: 0.6rem;
+font-size: 1.6rem;
+cursor: pointer;
+padding: 1.2rem 1.6rem;
+margin-block: 2rem 1.2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+@media screen and (min-width:320px){
+   width: 30rem;
+}
+@media screen and (min-width:475px){
+    width: 42rem;
+}
+`
