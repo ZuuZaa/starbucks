@@ -1,6 +1,7 @@
 import { nanoid } from 'nanoid';
 import './style.scss';
 import data from "data/MenuAllDatas";
+import { Link } from 'react-router-dom';
 
 export const Sidebar = () => {
     console.log(data)
@@ -16,7 +17,9 @@ export const Sidebar = () => {
                                     {item.products.map(
                                         product =>
                                             <li className='product-name' key={nanoid()}>
-                                                {product.name}
+                                                <Link to={`/menu/${product.link}`}>
+                                                    {product.name}
+                                                </Link>
                                             </li>
                                     )}
                                 </ul>

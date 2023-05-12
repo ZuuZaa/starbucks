@@ -6,7 +6,8 @@ import { AiOutlineCheck } from 'react-icons/ai'
 import { FilledButton, SimpleLink } from "styled/buttons"
 import { Link } from "react-router-dom"
 import './style.scss'
-import { JoinDropdown } from "features/join/dropdown"
+import { useState } from "react"
+import { BsChevronDown } from "react-icons/bs"
 
 export const Join = () => {
 
@@ -30,16 +31,28 @@ export const Join = () => {
             <Input {...formInputsData[4]} />
             <Input {...formInputsData[1]} />
           </div>
-          <JoinDropdown/>
+          <div className="form-group join-dropdown-container">
+            <div className="join-dropdown-title">
+              <p>Already have a Starbucks gift card?</p>
+              <label className="chevron" htmlFor="chevron"><BsChevronDown /></label>
+              <input type="checkbox" id="chevron" />
+
+            </div>
+            <div className="join-dropdown">
+              <p>Add your gift card to earn Stars when you pay and order ahead.</p>
+              <Input {...formInputsData[5]} min="0" max="9999999999999999" length="16" />
+              <Input {...formInputsData[6]} min="0" max="99999999" length="8" />
+            </div>
+          </div>
           <div className="form-group join-extra-content">
             <h3>COLLECT MORE STARS & EARN REWARDS</h3>
             <p>Email is a great way to know about offers and what’s new from Starbucks.</p>
             <div className="keep-signed">
               <div className="checkbox">
-                <label htmlFor="check">
+                <label htmlFor="agree">
                   <AiOutlineCheck />
                 </label>
-                <input type="checkbox" id="check" />
+                <input type="checkbox" id="agree" />
               </div>
               <h5>Yes, I’d like email from Starbucks</h5>
               <p>Know about initiatives, announcements and product offers.</p>
@@ -49,10 +62,10 @@ export const Join = () => {
             <h3>TERMS OF USE</h3>
             <div className="keep-signed">
               <div className="checkbox">
-                <label htmlFor="check">
+                <label htmlFor="term">
                   <AiOutlineCheck />
                 </label>
-                <input type="checkbox" id="check" />
+                <input type="checkbox" id="term" />
               </div>
               <h5>I agree to the <SimpleLink to='https://www.starbucks.com/rewards/terms/' target="_blank">Starbucks® Rewards Terms</SimpleLink> and
                 the <SimpleLink to="https://www.starbucks.com/terms/manage-gift-cards/" target="_blank">Starbucks® Rewards Terms</SimpleLink> and

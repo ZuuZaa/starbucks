@@ -1,3 +1,5 @@
+
+
 .all-products {
     padding-inline: 10rem;
     flex-grow: 1;
@@ -20,7 +22,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-        li {
+        li a {
             display: flex;
             align-items: center;
             gap: 1.4rem;

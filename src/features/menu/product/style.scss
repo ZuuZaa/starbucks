@@ -1,0 +1,117 @@
+.product {
+    .bread-crumb {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        color: rgba(0, 0, 0, .58);
+        font-size: 1.4rem;
+        background: #f9f9f9;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+
+        span {
+            color: rgba(0, 0, 0, .87);
+        }
+    }
+
+    .product-info {
+        background: #1f3933;
+
+        .product-content {
+            display: flex;
+            justify-content: space-evenly;
+
+            @media screen and (min-width: 320px) {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding-bottom: 1.6rem;
+            }
+
+            @media screen and (min-width: 1024px) {
+                flex-direction: row;
+                text-align: start;
+                padding-bottom: 0;
+            }
+        }
+
+        .img-wrapper {
+            width: 30rem;
+            height: 30rem;
+            margin-block: 1.6rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        .content-text {
+            max-width: 40rem;
+
+            h2 {
+                font-size: 3.6rem;
+                color: #fff;
+                font-weight: 700;
+                line-height: 1.29;
+                padding-bottom: 1.6rem;
+            }
+
+            p {
+                font-size: 2.4rem;
+                color: hsla(0, 0%, 100%, .7);
+            }
+        }
+
+    }
+
+    h3:is(.title) {
+        padding: 0 8px 12px;
+        font-weight: 600;
+        font-size: 2.4rem;
+        position: relative;
+
+        &::after {
+            background: #d4e9e2;
+            border-radius: 12px;
+            bottom: 0;
+            content: "";
+            height: 0.4rem;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+    }
+    .options {
+        display: flex;
+
+
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+            .size-options {
+                margin-right: 0;
+            }
+            //text-align: center;
+            //padding-bottom: 1.6rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            .size-options {
+                margin-right: 4.4rem;
+            }
+            //text-align: start;
+           // padding-bottom: 0;
+        }
+    }
+
+    .form-group {
+        &:has(input:checked) {
+            label {
+                color: rosybrown;
+            }
+        }
+    }
+}

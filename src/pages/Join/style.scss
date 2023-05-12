@@ -29,12 +29,31 @@
     .form-group {
         padding-bottom: 4rem;
     }
+
     .required-hint {
         padding-bottom: 3.2rem;
     }
+
     .join-dropdown {
         &:is(.open) {
             color: red;
+        }
+    }
+
+    input[type="checkbox"] {
+        appearance: none;
+    }
+
+    .join-dropdown-container {
+        .join-dropdown {
+            display: none;
+            transition: transform 1s;
+        }
+
+        &:has(input:checked) {
+            .join-dropdown {
+                display: block;
+            }
         }
     }
 
@@ -65,9 +84,7 @@
                 }
             }
 
-            input {
-                appearance: none;
-            }
+
         }
     }
 
