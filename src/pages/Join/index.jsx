@@ -6,7 +6,6 @@ import { AiOutlineCheck } from 'react-icons/ai'
 import { FilledButton, SimpleLink } from "styled/buttons"
 import { Link } from "react-router-dom"
 import './style.scss'
-import { useState } from "react"
 import { BsChevronDown } from "react-icons/bs"
 
 export const Join = () => {
