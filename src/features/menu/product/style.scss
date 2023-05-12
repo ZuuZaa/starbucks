@@ -273,8 +273,46 @@
         z-index: 3;
         .add-btn {
             position: absolute;
-            top: -60%;
+            top: -90%;
             right: 3%;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .location {
+            display: flex;
+            gap: 2rem;
+            font-size: 1.6rem;
+            border-bottom: 0.05rem solid #fff;
+
+            p {
+                color: hsla(0,0%,100%,.7);
+            }
+            h4 {
+                font-weight: 600;
+                margin-block: 0.5em 1em;
+            }
+            button {
+                color: inherit;
+                display: flex;
+                align-items: flex-start;
+            }
+        }
+
+        .basket  .icon-wrapper{
+            position: relative;
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.6rem;
+                font-weight: 600;
+
+            }
         }
     }
 }

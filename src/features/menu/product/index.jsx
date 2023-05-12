@@ -104,7 +104,7 @@ export const Product = () => {
             <span>200 <AiFillStar /> item</span>
             <p>Starbucks Blonde Espresso infused with Partanna® extra virgin
               olive oil, steamed with oatmilk. Velvety smooth. Deliciously lush.</p>
-            <h5>330 calories, 6g sugar, 23g fat <button className='info'>i</button></h5>
+            <h5>330 calories, 6g sugar, 23g fat</h5>
             <SimpleButton color="#fff">Full nutrition & ingredients list</SimpleButton>
           </div>
         </Container>
@@ -112,19 +112,21 @@ export const Product = () => {
       <div className='section-footer'>
         <FilledButton p='1.8rem 2.4rem' className='add-btn'>Add to Order</FilledButton>
         <Container pb='3.2rem' p_m='20%' p_l='30%'>
-          <div className="location">
-            <div className="content">
-              <p>For item availability</p>
-              <h4>Choose location</h4>
+          <div className="footer-content">
+            <div className="location">
+              <div className="content">
+                <p>For item availability</p>
+                <h4>Choose location</h4>
+              </div>
+              <button>
+                <BsChevronDown />
+              </button>
             </div>
-            <button>
-              <BsChevronDown />
-            </button>
-          </div>
-          <div className="basket">
-            <div className="icon-wrapper">
-              <img src={basket} alt="basket" />
-              <span>1</span>
+            <div className="basket">
+              <div className="icon-wrapper">
+                <img src={basket} alt="basket" />
+                <span>1</span>
+              </div>
             </div>
           </div>
         </Container>

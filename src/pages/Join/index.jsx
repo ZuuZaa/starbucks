@@ -32,7 +32,7 @@ export const Join = () => {
           </div>
           <div className="form-group join-dropdown-container">
             <div className="join-dropdown-title">
-              <p>Already have a Starbucks gift card?</p>
+              <SimpleLink>Already have a Starbucks gift card?</SimpleLink>
               <label className="chevron" htmlFor="chevron"><BsChevronDown /></label>
               <input type="checkbox" id="chevron" />
 
@@ -46,7 +46,7 @@ export const Join = () => {
           <div className="form-group join-extra-content">
             <h3>COLLECT MORE STARS & EARN REWARDS</h3>
             <p>Email is a great way to know about offers and what’s new from Starbucks.</p>
-            <div className="keep-signed">
+            <div className="keep-signed check">
               <div className="checkbox">
                 <label htmlFor="agree">
                   <AiOutlineCheck />
@@ -54,12 +54,13 @@ export const Join = () => {
                 <input type="checkbox" id="agree" />
               </div>
               <h5>Yes, I’d like email from Starbucks</h5>
-              <p>Know about initiatives, announcements and product offers.</p>
             </div>
+            <p>Know about initiatives, announcements and product offers.</p>
+
           </div>
           <div className="form-group join-extra-content">
             <h3>TERMS OF USE</h3>
-            <div className="keep-signed">
+            <div className="term-uses check">
               <div className="checkbox">
                 <label htmlFor="term">
                   <AiOutlineCheck />
@@ -70,8 +71,9 @@ export const Join = () => {
                 the <SimpleLink to="https://www.starbucks.com/terms/manage-gift-cards/" target="_blank">Starbucks® Rewards Terms</SimpleLink> and
                 have read the  <SimpleLink to="https://www.starbucks.com/terms/privacy-policy/#notice-of-financial-incentive" target="_blank">Starbucks Privacy Statement</SimpleLink>
               </h5>
-              <p>Please agree to the Terms of Use.</p>
             </div>
+            <p>Please agree to the Terms of Use.</p>
+
           </div>
           <div className="join-btn">
             <FilledButton to='/'>Create account</FilledButton>
