@@ -23,6 +23,38 @@
     p {
         font-size: 1.6rem;
     }
+    .details {
+        position: relative;
+        display: flex;
+        a {
+            margin-left: 1rem;
+        }
+
+        .info {
+            &:is(.show){
+                display: flex;
+            }
+            &:not(.show){
+                display: none;
+            }
+            
+            width: 40rem;
+            position: absolute;
+            flex-direction: column;
+            padding: 3.2rem 1.6rem;
+            bottom: 80%;
+            right: 3rem;
+            z-index: 2;
+            background: #fff;
+            border-radius: 0.6rem;
+    filter: drop-shadow(0 8px 4px rgba(0,0,0,.12)) drop-shadow(0 0 2px rgba(0,0,0,.24));
+    a {
+        align-self: flex-end;
+        margin-top: 2rem;
+    }
+
+        }
+    }
 
     .keep-signed {
         display: flex;

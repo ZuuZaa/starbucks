@@ -9,6 +9,7 @@ import { BsChevronDown } from 'react-icons/bs';
 import basket from 'assets/icons/basket.svg';
 import { Container } from 'styled/containers';
 import { SlLocationPin } from 'react-icons/sl';
+import { CustomizeModal } from '../customizeModal';
 
 
 export const Product = () => {
@@ -16,9 +17,15 @@ export const Product = () => {
   const product = data.products.filter(item => item.id === parseInt(id))[0]
   const [sizeIndex, setSizeIndex] = useState(1)
   const selectedSize = product.sizes[sizeIndex]
-
+  const [showModal, setShowModal] = useState(false)
+  const [modalContent, setModalContent] = useState([])
+  const customizeClickHandler = (item) => {
+    setModalContent(item);
+    setShowModal(true);
+  }
   return (
     <div className="product">
+      <CustomizeModal open={showModal} setOpen={setShowModal} content={modalContent}/>
       <div className="bread-crumb">
         <Container pb='1.6rem' p_m='10rem 2.4rem' p_l='13.1rem 4rem'>
           Menu / {product.subcategory} / <span> {product.name}</span>
@@ -85,7 +92,7 @@ export const Product = () => {
               <ul>
                 {customizations.map(
                   item => (
-                    <li className='customize-category'>
+                    <li className='customize-category' onClick={()=> customizeClickHandler(item)}>
                       <EditButton>
                         <span>{item.title}</span>
                         <button>Edit</button>

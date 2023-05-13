@@ -5,9 +5,12 @@ import { Container } from "styled/containers"
 import { Input } from "components/input"
 import { AiOutlineCheck } from 'react-icons/ai'
 import { FilledButton, SimpleButton, SimpleLink } from "styled/buttons"
+import { useState } from "react"
 
 export const Login = () => {
 
+  const [showInfo, setShowInfo] = useState(false);
+ 
   return (
     <section className="login-section">
       <Container>
@@ -23,8 +26,12 @@ export const Login = () => {
               </label>
               <input type="checkbox" id="check" />
             </div>
-            <p>Keep me signed in.
+            <p className="details" onClick={()=>setShowInfo(!showInfo)}>Keep me signed in.
               <SimpleLink>Details</SimpleLink>
+              <div className={showInfo ? "info show" : "info"} onClick={()=>setShowInfo(false)}>
+                <p>Checking this box will reduce the number of times you’re asked to sign in. To keep your account secure, use this option only on your personal devices.</p>
+                <SimpleLink>Get it</SimpleLink>
+              </div>
             </p>
           </div>
           <div className="links">
